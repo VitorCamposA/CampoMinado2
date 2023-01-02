@@ -14,6 +14,11 @@ public class Campo {
     private List<Campo> vizinhos = new ArrayList<Campo>();
     //mina
     private boolean minado = false;
+
+    public boolean isMinado() {
+        return minado;
+    }
+
     //aberto
     private boolean aberto = false;
     //marcado
@@ -79,6 +84,10 @@ public class Campo {
 
     void minar() {
         minado = true;
+    }
+
+    void setAberto(boolean aberto) {
+        this.aberto = aberto;
     }
 
     public boolean isAberto() {
